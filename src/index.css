@@ -5,7 +5,10 @@
 }
 
 
-
+body {
+  background-color: #2E292E;
+  font-family: 'Poppins', sans-serif; 
+}
 
 button {
   cursor: pointer;
