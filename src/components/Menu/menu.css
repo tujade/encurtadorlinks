@@ -1,0 +1,28 @@
+.menu {
+  position: absolute;
+  top: 20px;
+  right:10%;
+  font-weight: Bold;
+  display: flex;
+}
+
+.bnt {
+  color: black;
+  background-color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+/* Transition Button  */
+.raise {
+  --color: #EB9064;
+  --hover: #EB9064;
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.7em 0.7em -0.6em var(--hover);
+  transform: translateY(-0.25em);
+}

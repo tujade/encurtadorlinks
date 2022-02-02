@@ -1,5 +1,6 @@
 import { FiLink } from "react-icons/fi";
 import './home.css'
+import Menu from "../../components/Menu"
 
 
 export default function Home() {
@@ -18,6 +19,8 @@ export default function Home() {
           </div>
           <button className="raise" >Gerar Link</button>
         </div>
+
+        <Menu/>
       </div>
   );
 }
