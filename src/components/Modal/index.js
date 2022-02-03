@@ -7,7 +7,12 @@ import swal from 'sweetalert';
 export default function Modal({closeModal, content }) {
   async function copyLink() {
     await navigator.clipboard.writeText(content.link)
-    swal("Link Copiado!");
+    swal({
+      title: "Link copiado!",
+      icon: "success",
+      timer: 1500,
+      button: false
+    });
 
   }
 

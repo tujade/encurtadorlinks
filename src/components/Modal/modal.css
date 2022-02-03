@@ -49,6 +49,14 @@
   font-size: 14px;
 }
 
+.swal-modal {
+  border: 3px solid #2E292E;
+}
+
+.swal-title {
+  margin-bottom: 16px;
+}
+
 @media (max-width: 720px) {
   .modal-container {
     width: 70%;
