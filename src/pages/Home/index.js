@@ -5,7 +5,7 @@ import { useState } from "react";
 import Modal from "../../components/Modal"
 import api from "../../services/api"
 import swal from 'sweetalert';
-
+import { saveLink } from '../../services/storeLinks'
 
 
 export default function Home() {
@@ -21,6 +21,8 @@ export default function Home() {
 
       setData(response.data)
       setShowModal(true)
+
+      saveLink('@encurtaae', response.data)
 
       setLink('')
 
