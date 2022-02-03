@@ -1,10 +1,14 @@
 import './modal.css';
 import { FiX, FiClipboard } from 'react-icons/fi'
+import swal from 'sweetalert';
+
 
 
 export default function Modal({closeModal, content }) {
   async function copyLink() {
-    await navigator.clipboard.write(content.link)
+    await navigator.clipboard.writeText(content.link)
+    swal("Link Copiado!");
+
   }
 
 

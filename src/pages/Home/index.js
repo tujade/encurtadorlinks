@@ -4,6 +4,8 @@ import Menu from "../../components/Menu"
 import { useState } from "react";
 import Modal from "../../components/Modal"
 import api from "../../services/api"
+import swal from 'sweetalert';
+
 
 
 export default function Home() {
@@ -23,7 +25,7 @@ export default function Home() {
       setLink('')
 
     }catch {
-      alert('Ops, algo deu errado, tente novamente!')
+      swal("Ops, algo deu errado, tente novamente!");
       setLink('')
     }
   }
