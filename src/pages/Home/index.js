@@ -13,7 +13,8 @@ export default function Home() {
   const [ data, setData ] = useState('')
   const [showModal, setShowModal ] = useState(false);
 
- async function handleShortLink() {
+
+async function handleShortLink() {
     try{
       const response = await api.post('/shorten', {
         long_url: link

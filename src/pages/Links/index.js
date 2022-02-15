@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react'
 import './links.css'
 import { FiLink, FiTrash, FiArrowLeftCircle } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
-import { getLinksSave } from '../../services/storeLinks'
-import { deleteLink  } from '../../services/storeLinks'
+import { getLinksSave, deleteLink } from '../../services/storeLinks'
 import Modal from '../../components/Modal'
 
 export default function Links() {
